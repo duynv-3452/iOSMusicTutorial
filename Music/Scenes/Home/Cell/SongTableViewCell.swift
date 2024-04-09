@@ -8,7 +8,6 @@
 import UIKit
 
 class SongTableViewCell: UITableViewCell {
-
     @IBOutlet weak var songImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var performerLabel: UILabel!

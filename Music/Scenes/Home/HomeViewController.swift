@@ -8,9 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
     @IBOutlet weak var tableView: UITableView!
-    
     private var dataSource = [Song]() {
         didSet {
             tableView.reloadData()
@@ -48,5 +46,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configCell(song: dataSource[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "SongDetailViewController") as? SongDetailViewController else {
+            return
+        }
+        detailVC.configSong(songs: dataSource, index: indexPath.row)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -23,6 +23,7 @@
 		C9EFD1D82BC4C53400B094C8 /* EmLuonOTrongTamTriAnh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EFD1D22BC4C53400B094C8 /* EmLuonOTrongTamTriAnh.mp3 */; };
 		C9EFD1DC2BC4C55900B094C8 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EFD1DB2BC4C55900B094C8 /* SongTableViewCell.xib */; };
 		C9EFD1DD2BC4C55900B094C8 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EFD1DA2BC4C55900B094C8 /* SongTableViewCell.swift */; };
+		C9EFD1E02BC4D21B00B094C8 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EFD1DF2BC4D21B00B094C8 /* SongDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C9EFD1D22BC4C53400B094C8 /* EmLuonOTrongTamTriAnh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EmLuonOTrongTamTriAnh.mp3; sourceTree = "<group>"; };
 		C9EFD1DA2BC4C55900B094C8 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		C9EFD1DB2BC4C55900B094C8 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
+		C9EFD1DF2BC4D21B00B094C8 /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		C9EFD1AC2BC4C2F900B094C8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9EFD1DE2BC4D1F100B094C8 /* DetailSong */,
 				C9EFD1AF2BC4C32700B094C8 /* Storyboard */,
 				C9EFD1B02BC4C33000B094C8 /* Home */,
 			);
@@ -143,6 +146,14 @@
 				C9EFD1DB2BC4C55900B094C8 /* SongTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9EFD1DE2BC4D1F100B094C8 /* DetailSong */ = {
+			isa = PBXGroup;
+			children = (
+				C9EFD1DF2BC4D21B00B094C8 /* SongDetailViewController.swift */,
+			);
+			path = DetailSong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				C9EFD1962BC4C2F100B094C8 /* AppDelegate.swift in Sources */,
 				C9EFD1982BC4C2F100B094C8 /* SceneDelegate.swift in Sources */,
 				C9EFD1A02BC4C2F100B094C8 /* Music.xcdatamodeld in Sources */,
+				C9EFD1E02BC4D21B00B094C8 /* SongDetailViewController.swift in Sources */,
 				C9EFD1B22BC4C34F00B094C8 /* HomeViewController.swift in Sources */,
 				C9EFD1B42BC4C38500B094C8 /* Song.swift in Sources */,
 			);
